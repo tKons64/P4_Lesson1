@@ -1,7 +1,6 @@
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Optional;
 import java.util.function.BiConsumer;
 import java.util.stream.Stream;
 
@@ -15,6 +14,7 @@ public class Main {
                 new Person(2),
                 new Person(15),
                 new Person(9)));
+        //List<Person> listPerson = new LinkedList<>();
 
         Comparator<Person> personComparator = new Comparator<Person>() {
             @Override
@@ -23,9 +23,9 @@ public class Main {
             }
         };
 
-        findMinMax(listPerson.stream(), personComparator, (personMin, personMax) -> {
-            System.out.println("Min: " + personMin.getAge());
-            System.out.println("Max: " + personMax.getAge());
+        findMinMax(listPerson.stream(), personComparator, (intMin, intMax) -> {
+            System.out.println("Min: " + intMin);
+            System.out.println("Max: " + intMax);
         });
 
         System.out.println("Задание №2");
@@ -37,12 +37,16 @@ public class Main {
 
     public static void findMinMax(Stream<Person> stream,
                                   Comparator<Person> order,
-                                  BiConsumer <Person, Person> minMaxConsumer) {
+                                  BiConsumer <Integer, Integer> minMaxConsumer) {
 
         List<Person> listPersonSort = stream.sorted(order).toList();
-        Person min = listPersonSort.get(0);
-        Person max = listPersonSort.get(listPersonSort.size()-1);
-        minMaxConsumer.accept(min, max);
+        if (listPersonSort.size() == 0) {
+            minMaxConsumer.accept(null, null);
+        } else {
+            int min = listPersonSort.get(0).getAge();
+            int max = listPersonSort.get(listPersonSort.size()-1).getAge();
+            minMaxConsumer.accept(min, max);
+        }
     }
 }
 
