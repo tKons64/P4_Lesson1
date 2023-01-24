@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b20b7ce-3e32-4584-9ca1-d725032e337c" name="Changes" comment="Урок 1. Выполнено задание №1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1b20b7ce-3e32-4584-9ca1-d725032e337c" name="Changes" comment="Урок 1. Выполнено задание №2">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674567515261</updated>
-      <workItem from="1674567516564" duration="8622000" />
+      <workItem from="1674567516564" duration="8927000" />
     </task>
     <task id="LOCAL-00001" summary="Урок 1. Домашнее задание">
       <created>1674575412117</created>
@@ -81,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674575746937</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Урок 1. Выполнено задание №2">
+      <created>1674576374942</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674576374942</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +107,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Урок 1. Домашнее задание" />
     <MESSAGE value="Урок 1. Выполнено задание №1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Урок 1. Выполнено задание №1" />
+    <MESSAGE value="Урок 1. Выполнено задание №2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Урок 1. Выполнено задание №2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

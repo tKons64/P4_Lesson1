@@ -16,7 +16,14 @@ public class Main {
                 new Person(15),
                 new Person(9)));
 
-        findMinMax(listPerson.stream(), new SortByPerson(), (personMin, personMax) -> {
+        Comparator<Person> personComparator = new Comparator<Person>() {
+            @Override
+            public int compare(Person p1, Person p2) {
+                return p1.getAge() - p2.getAge();
+            }
+        };
+
+        findMinMax(listPerson.stream(), personComparator, (personMin, personMax) -> {
             System.out.println("Min: " + personMin.getAge());
             System.out.println("Max: " + personMax.getAge());
         });
