@@ -17,11 +17,9 @@ public class Main {
                 new Person(9)));
 
         findMinMax(list.stream(), new SortByPerson(), (personMin, personMax) -> {
-            System.out.println("Min: " + personMin);
-            System.out.println("Max: " + personMax);
+            System.out.println("Min: " + personMin.getAge());
+            System.out.println("Max: " + personMax.getAge());
         });
-
-        List<Person> list2 = list.stream().sorted().toList();
 
     }
 
